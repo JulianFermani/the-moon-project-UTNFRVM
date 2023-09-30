@@ -24,12 +24,43 @@
 
 ## Documentación.
 
-**Título del Juego: "DREAMSCAPE: 0110011"**
+# Binary Logic Puzzle 🎮
 
-¡Sumérgete en un viaje psicodélico a través de los misteriosos confines de la red en "**DREAMSCAPE: 0110011**"! Este juego de mesa te transporta a un mundo de estética vaporwave, donde la nostalgia del pasado y el futurismo se fusionan en un paisaje digital de neones parpadeantes y sintetizadores evocadores.
+## Descripción
+"Binary Logic Puzzle" es un emocionante juego de lógica que desafía tu habilidad para manipular números binarios y operadores lógicos. Tu objetivo es utilizar tres líneas, cada una con cuatro espacios que representan los valores binarios "8421", para formar un número decimal específico mediante operaciones binarias correctas. Pon a prueba tu mente mientras resuelves una serie de desafíos de lógica en este juego divertido y educativo. 🧠🔢
 
-**Descripción del Juego:**
+## Instrucciones
+1. **Objetivo del Juego:** 🎯 Tu objetivo en "Binary Logic Puzzle" es utilizar tres líneas, cada una con cuatro espacios que representan los valores binarios "8421", y operadores lógicos para formar un número decimal específico al dar como resultado una operación binaria correcta con las tres líneas. 🧮
 
-En "**DREAMSCAPE: 0110011**", asumes el papel de un explorador cibernético en busca de conocimiento y revelaciones en el vasto océano de datos de la red. Tu objetivo es navegar a través de los códigos binarios y los laberintos digitales, recolectando fragmentos de información esencial mientras evitas las trampas cibernéticas y desentrañas los secretos ocultos.
+2. **Las Tres Líneas:** 📝📝📝
+   - En el juego, tendrás tres líneas, cada una con cuatro espacios que representan los valores binarios "8421". Estos espacios son esenciales para realizar operaciones binarias.
 
-**Aprendizaje:** "DREAMSCAPE: 0110011" no solo te sumerge en un mundo estético y musicalmente envolvente, sino que también promueve habilidades de resolución de problemas, pensamiento lógico y trabajo en equipo a medida que los jugadores colaboran para desentrañar los misterios de la red.
+3. **Operadores Lógicos:** ➕➖➗✖️
+   - Puedes utilizar operadores lógicos como AND, OR, XOR, etc., para combinar los valores en los espacios de las líneas. Cada operador tiene reglas específicas que debes seguir para obtener el resultado deseado.
+
+4. **Número Decimal Objetivo:** 🎯
+   - Cada nivel del juego tendrá un número decimal objetivo que debes alcanzar mediante operaciones binarias correctas utilizando las tres líneas. El número objetivo se mostrará en la parte superior de la pantalla.
+
+5. **Cómo Jugar:**
+   - Selecciona uno de los espacios en una línea haciendo clic en él. ☑️
+   - Luego, selecciona otro espacio en la misma línea o en otra línea para aplicar un operador lógico (AND, OR, XOR, etc.). ↔️
+   - El resultado de la operación binaria se mostrará en el espacio seleccionado. 🔄
+   - Repite estos pasos hasta que hayas alcanzado el número decimal objetivo. 🔁
+
+6. **Niveles de Dificultad:** 📈
+   - El juego consta de varios niveles de dificultad. Cada nivel presenta un número decimal objetivo diferente y desafíos más complejos. Debes resolver cada nivel para avanzar al siguiente.
+
+7. **Puntuación:** 🏆
+   - Tu puntuación se basará en la cantidad de movimientos que hagas para alcanzar el número decimal objetivo. Trata de resolver los niveles con la menor cantidad de movimientos posibles para obtener una puntuación alta.
+
+8. **Consejos:** 💡
+   - Utiliza la lógica binaria y los operadores lógicos para planificar tus movimientos. Experimenta con diferentes combinaciones para alcanzar el resultado deseado.
+
+9. **Gana el Juego:** 🥇
+   - Ganas el juego cuando alcanzas el número decimal objetivo utilizando las tres líneas y los operadores lógicos disponibles de manera correcta.
+
+10. **Diviértete:** 🎉🕹️
+    - ¡Disfruta de este desafiante juego de lógica y pon a prueba tus habilidades matemáticas y de pensamiento lógico!
+
+Recuerda que a medida que avanzas en el juego, los desafíos se vuelven más complejos, por lo que deberás pensar estratégicamente y utilizar la lógica binaria y los operadores lógicos de manera eficaz para resolverlos. ¡Buena suerte y diviértete jugando "Binary Logic Puzzle"! 🌟💫
+
