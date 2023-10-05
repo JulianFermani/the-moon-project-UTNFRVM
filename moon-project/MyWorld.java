@@ -49,5 +49,18 @@ public class MyWorld extends World
         addObject(new Zero_One(), 6, 3);
         addObject(new Zero_One(), 7, 3);
 
-    }
+        //Se añaden las imagenes de los numeros
+    String[] rutasImagenes = {"ocho.png", "cuatro.png", "dos.png", "uno.png"};
+
+        Numeros numero1 = new Numeros(rutasImagenes[0]);
+        Numeros numero2 = new Numeros(rutasImagenes[1]);
+        Numeros numero3 = new Numeros(rutasImagenes[2]);
+        Numeros numero4 = new Numeros(rutasImagenes[3]);
+        // Se añaden los 8, 4, 2 y 1.
+        addObject(numero1, 4, 0);
+        addObject(numero2, 5, 0);
+        addObject(numero3, 6, 0);
+        addObject(numero4, 7, 0);
+       }
+       
 }
