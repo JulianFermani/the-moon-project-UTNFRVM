@@ -32,6 +32,26 @@ public class MyWorld extends World
         addObject(new And (), 1, 3);
         addObject(new Xor (), 0, 4);
         addObject(new Plus_less (), 1, 4);
+        // Se añade el logo de la UTN.
         addObject(new Logo(), 2, 0);
+        
+        // Se añaden los ceros o unos binarios.
+        addObject(new Zero_One(), 4, 1);
+        addObject(new Zero_One(), 5, 1);
+        addObject(new Zero_One(), 6, 1);
+        addObject(new Zero_One(), 7, 1);
+        
+        addObject(new Zero_One(), 4, 2);
+        addObject(new Zero_One(), 5, 2);
+        addObject(new Zero_One(), 6, 2);
+        addObject(new Zero_One(), 7, 2);
+        
+        addObject(new Zero_One(), 4, 3);
+        addObject(new Zero_One(), 5, 3);
+        addObject(new Zero_One(), 6, 3);
+        addObject(new Zero_One(), 7, 3);
+        
+        // Se añaden los 8, 4, 2 y 1.
+        
     }
 }
