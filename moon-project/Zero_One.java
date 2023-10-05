@@ -13,13 +13,16 @@ public class Zero_One extends Bin
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     int aleatorio;
+    int booleano;
     public Zero_One ()
     {   
         aleatorio = Greenfoot.getRandomNumber(2);
         if (aleatorio == 0){
             setImage("art_8.png");
+            booleano = 0;
         }else{
             setImage("art_7.png");
+            booleano = 1;
         }
         GreenfootImage image = getImage();
         setImage(image);

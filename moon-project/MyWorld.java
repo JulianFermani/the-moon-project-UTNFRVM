@@ -18,8 +18,6 @@ public class MyWorld extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(9, 5, 100);
         setBackground("background.png");
-        int imageWidth = 70; // Ancho en píxeles
-        int imageHeight = 70; // altura en px
         
         // Se añaden los objetos en el mundo con su respectiva ubicacion.
         addObject(new Incrementar (), 0, 0);
@@ -50,8 +48,6 @@ public class MyWorld extends World
         addObject(new Zero_One(), 5, 3);
         addObject(new Zero_One(), 6, 3);
         addObject(new Zero_One(), 7, 3);
-        
-        // Se añaden los 8, 4, 2 y 1.
-        
+
     }
 }

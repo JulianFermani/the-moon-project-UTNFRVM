@@ -19,10 +19,4 @@ public class And extends Operaciones
     {
         
     }
-    // Evitar la respuesta a eventos de clic del mouse
-    public void onMousePress() {
-        // No realizar ninguna acción al hacer clic en el objeto
-    }
-    
-
 }
