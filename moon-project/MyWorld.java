@@ -8,7 +8,6 @@
  */
 public class MyWorld extends World
 {
-
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -48,6 +47,7 @@ public class MyWorld extends World
         addObject(new Zero_One(), 5, 3);
         addObject(new Zero_One(), 6, 3);
         addObject(new Zero_One(), 7, 3);
+<<<<<<< Updated upstream
 
         //Se añaden las imagenes de los numeros
     String[] rutasImagenes = {"ocho.png", "cuatro.png", "dos.png", "uno.png"};
@@ -63,4 +63,9 @@ public class MyWorld extends World
         addObject(numero4, 7, 0);
        }
        
+=======
+        
+        addObject(new Operaciones(), 0,0);
+    }
+>>>>>>> Stashed changes
 }

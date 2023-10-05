@@ -28,6 +28,10 @@ public class Zero_One extends Bin
         setImage(image);
         image.scale(imageWidth,imageHeight);
     }
+    public int getBooleano()
+    {   
+        return booleano;
+    }
     public void act()
     {
         // Add your action code here.
