@@ -11,8 +11,8 @@ public class Numeros extends Actor
      * Act - do whatever the Numeros wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    int imageWidth = 70; // Ancho en píxeles
-    int imageHeight = 70; // Altura en px
+    int imageWidth = 120; // Ancho en píxeles
+    int imageHeight = 120; // Altura en px
     //imageArray[] = new GreenfootImage[4];
     private String[] rutasImagenes = {"ocho.png","cuatro.png","dos.png","cuatro.png"}; 
     public Numeros(String rutaImagen){

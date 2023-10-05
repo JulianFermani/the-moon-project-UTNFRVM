@@ -15,7 +15,7 @@ public class MyWorld extends World
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(9, 5, 100);
+        super(9, 5, 140);
         setBackground("background.png");
         
         // Se añaden los objetos en el mundo con su respectiva ubicacion.
@@ -47,10 +47,9 @@ public class MyWorld extends World
         addObject(new Zero_One(), 5, 3);
         addObject(new Zero_One(), 6, 3);
         addObject(new Zero_One(), 7, 3);
-<<<<<<< Updated upstream
 
         //Se añaden las imagenes de los numeros
-    String[] rutasImagenes = {"ocho.png", "cuatro.png", "dos.png", "uno.png"};
+        String[] rutasImagenes = {"ocho.png", "cuatro.png", "dos.png", "uno.png"};
 
         Numeros numero1 = new Numeros(rutasImagenes[0]);
         Numeros numero2 = new Numeros(rutasImagenes[1]);
@@ -61,11 +60,9 @@ public class MyWorld extends World
         addObject(numero2, 5, 0);
         addObject(numero3, 6, 0);
         addObject(numero4, 7, 0);
-       }
-       
-=======
         
         addObject(new Operaciones(), 0,0);
     }
->>>>>>> Stashed changes
+        
+        
 }

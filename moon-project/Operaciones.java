@@ -10,8 +10,8 @@ import java.util.*;
 public class Operaciones extends Actor
 {
     
-    int imageWidth = 70; // Ancho en píxeles
-    int imageHeight = 70; // altura en px
+    int imageWidth = 120; // Ancho en píxeles
+    int imageHeight = 120; // altura en px
     int booleano;
     Zero_One objeto;
     private int contadorEspera = 0; // Contador para la espera después de presionar "1"
