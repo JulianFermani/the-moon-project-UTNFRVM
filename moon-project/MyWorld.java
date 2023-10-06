@@ -15,7 +15,7 @@ public class MyWorld extends World
     public MyWorld()
     {    
         super(9, 5, 140);
-        setBackground("background.png");
+        setBackground("fondo.png");
         
         // Se añaden los objetos en el mundo con su respectiva ubicacion.
         addObject(new Incrementar (), 0, 0);
