@@ -24,6 +24,10 @@
 
 ## Documentación.
 
+Se puede ver como trabajamos en: 
+
+[![trello](https://img.shields.io/badge/Documentaci%C3%B3n-blue?style=for-the-badge&logo=googledocs&logoColor=white)](https://trello.com/b/dQaCFrNO/paradigmas-de-programaci%C3%B3n)
+
 # Binary Logic Puzzle 🎮
 
 ## Descripción

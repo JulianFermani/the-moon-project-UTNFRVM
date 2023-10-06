@@ -10,12 +10,13 @@ import java.util.*;
 public class Operaciones extends Actor
 {
     
-    int imageWidth = 120; // Ancho en píxeles
-    int imageHeight = 120; // altura en px
-    int booleano;
+    int imageWidth = 110; // Ancho en píxeles
+    int imageHeight = 110   ; // altura en px
+    int booleano, filaATrabajar, columnaATrabajar;
     Zero_One objeto;
-    private int contadorEspera = 0; // Contador para la espera después de presionar "1"
-    private boolean esperandoD = false; // Bandera para controlar si se espera la tecla "D"
+    int bandera = 0;
+    boolean esperando = false; // Bandera para controlar si se espera la tecla "D"
+    int booleanoDelObjeto;
     /**
      * Act - do whatever the Operaciones wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -24,7 +25,7 @@ public class Operaciones extends Actor
     public Operaciones ()
     {
         GreenfootImage image = getImage();
-        image.setTransparency(0); // Establecer la transparencia al 0 para que no sea visible
+        image.setTransparency(100); // Establecer la transparencia al 0 para que no sea visible
         setImage(image);
     }
     public void act()
@@ -35,33 +36,60 @@ public class Operaciones extends Actor
     {
         if (Greenfoot.isKeyDown("1"))
         {
-            //ESTO NO FUNCIONA CORRECTAMENTE, VER LA FORMA DE QUE CUANDOS SE INGRESE EL 1 ESPERE A QUE SU SIGUIENTE TECLA SEA UNA D.
-            
-            contadorEspera++; // Incrementa el contador de espera
-            for (int i = 0; i <= 12000; i++) // Espera durante 60 ciclos (ajusta según sea necesario)
+            columnaATrabajar = 7; // Se sabe que la columna a trabajar es igual a coordenadaX.
+            while (true) // While true para que el programa se quede esperando una tecla.
             {
-                if (Greenfoot.isKeyDown("D"))
-                {
-                    esperandoD = true; // Activa la bandera para esperar "D"    
-                }
-                
+              // En cada if se setea la fila a la que pertenece la letra.
+              if (Greenfoot.isKeyDown("D"))
+              {
+                esperando = true;
+                filaATrabajar =  1;
+                break;
+              }
+              else if (Greenfoot.isKeyDown("C"))
+              {
+                esperando = true;
+                filaATrabajar = 2;
+                break;
             }
-            
-            if (esperandoD)
+              else if (Greenfoot.isKeyDown("B"))
+              {
+                esperando = true;
+                filaATrabajar = 3;
+                break;
+              }
+            }
+            // Solo entra si se toco alguna tecla de interes. 
+            if (esperando)
             {
-                
-                objeto = buscarObjetoEnCoordenadas(7, 1);
-                booleano = objeto.booleano;
-                
-                if (booleano == 0)
-                {
-                    booleano = 1;
-                    objeto.setImage("art_7.png");
-                    GreenfootImage image = objeto.getImage();
-                    image.scale(imageWidth,imageHeight);
-                }
-            }            
-        }else if (Greenfoot.isKeyDown("2")){
+              bandera = 0;
+              for (int i = 0; i <= 3; i++)
+              {
+                  // Toma el objeto de interes y le saca el booleano.
+                  objeto = buscarObjetoEnCoordenadas(columnaATrabajar, filaATrabajar);
+                  booleanoDelObjeto = objeto.booleano;
+              
+                  if (booleanoDelObjeto == 0)
+                  {
+                    if (bandera == 0)
+                    {
+                        // Si es cero cambia su valor de booleano a 1 y le cambia la imagen.
+                        objeto.booleano = 1;
+                        objeto.setImage("art_7.png");
+                        GreenfootImage image = objeto.getImage();
+                        image.scale(imageWidth, imageHeight);
+                        bandera = 1;
+                    }    
+                  }else
+                    {
+                      // Decrementa para ir al objeto de su izquierda.
+                      columnaATrabajar -= 1;
+                    }
+              }
+            }           
+        }
+        else if (Greenfoot.isKeyDown("2"))
+        {
         
         }else if (Greenfoot.isKeyDown("3")){
         

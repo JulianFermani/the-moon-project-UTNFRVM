@@ -14,7 +14,6 @@ public class MyWorld extends World
      */
     public MyWorld()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(9, 5, 140);
         setBackground("background.png");
         
@@ -51,7 +50,7 @@ public class MyWorld extends World
         //Se añaden las imagenes de los numeros
         String[] rutasImagenes = {"ocho.png", "cuatro.png", "dos.png", "uno.png"};
 
-        Numeros numero1 = new Numeros(rutasImagenes[0]);
+        Numeros numero1     = new Numeros(rutasImagenes[0]);
         Numeros numero2 = new Numeros(rutasImagenes[1]);
         Numeros numero3 = new Numeros(rutasImagenes[2]);
         Numeros numero4 = new Numeros(rutasImagenes[3]);
