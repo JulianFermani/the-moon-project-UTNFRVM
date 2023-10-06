@@ -59,7 +59,7 @@ public class Operaciones extends Actor
                 break;
               }
             }
-            // Solo entra si se toco alguna tecla de interes. 
+            // Solo entra si se toco alguna tecla de interes.
             if (esperando)
             {
               bandera = 0;
@@ -68,7 +68,67 @@ public class Operaciones extends Actor
                   // Toma el objeto de interes y le saca el booleano.
                   objeto = buscarObjetoEnCoordenadas(columnaATrabajar, filaATrabajar);
                   booleanoDelObjeto = objeto.booleano;
-              
+
+                  if (booleanoDelObjeto == 1)
+                  {
+                    if (bandera == 0)
+                    {
+                        // Si es cero cambia su valor de booleano a 0 y le cambia la imagen.
+                        objeto.booleano = 0;
+                        objeto.setImage("art_8.png");
+                        GreenfootImage image = objeto.getImage();
+                        image.scale(imageWidth, imageHeight);
+                        // Decrementa para ir al objeto de su izquierda.
+                        columnaATrabajar -= 1;
+                    }
+                  }else if (booleanoDelObjeto == 0)
+                    {
+                      // Si es cero el valor del booleano quiere decir que llegamos al limite
+                      // entonces cambiamos su valor a 1 y activamos la bandera.
+                      bandera = 1;
+                      objeto.booleano = 1;
+                      objeto.setImage("art_7.png");
+                      GreenfootImage image = objeto.getImage();
+                      image.scale(imageWidth, imageHeight);
+                    }
+              }
+            }           
+        }
+        else if (Greenfoot.isKeyDown("2"))
+        {
+            columnaATrabajar = 7; // Se sabe que la columna a trabajar es igual a coordenadaX.
+            while (true) // While true para que el programa se quede esperando una tecla.
+            {
+            // En cada if se setea la fila a la que pertenece la letra.
+            if (Greenfoot.isKeyDown("D"))
+            {
+                esperando = true;
+                filaATrabajar =  1;
+                break;
+            }
+            else if (Greenfoot.isKeyDown("C"))
+            {
+                esperando = true;
+                filaATrabajar = 2;
+                break;
+            }
+            else if (Greenfoot.isKeyDown("B"))
+            {
+                esperando = true;
+                filaATrabajar = 3;
+                break;
+            }
+            }
+            // Solo entra si se toco alguna tecla de interes.
+            if (esperando)
+            {
+              bandera = 0;
+              for (int i = 0; i <= 3; i++)
+              {
+                  // Toma el objeto de interes y le saca el booleano.
+                  objeto = buscarObjetoEnCoordenadas(columnaATrabajar, filaATrabajar);
+                  booleanoDelObjeto = objeto.booleano;
+
                   if (booleanoDelObjeto == 0)
                   {
                     if (bandera == 0)
@@ -78,19 +138,21 @@ public class Operaciones extends Actor
                         objeto.setImage("art_7.png");
                         GreenfootImage image = objeto.getImage();
                         image.scale(imageWidth, imageHeight);
-                        bandera = 1;
-                    }    
-                  }else
+                        // Decrementa para ir al objeto de su izquierda.
+                        columnaATrabajar -= 1;
+                    }
+                  }else if (booleanoDelObjeto == 1)
                     {
-                      // Decrementa para ir al objeto de su izquierda.
-                      columnaATrabajar -= 1;
+                      // Si es uno el valor del booleano quiere decir que llegamos al limite
+                      // entonces cambiamos su valor a 0 y activamos la bandera.
+                      bandera = 1;
+                      objeto.booleano = 0;
+                      objeto.setImage("art_8.png");
+                      GreenfootImage image = objeto.getImage();
+                      image.scale(imageWidth, imageHeight);
                     }
               }
-            }           
-        }
-        else if (Greenfoot.isKeyDown("2"))
-        {
-        
+            }
         }else if (Greenfoot.isKeyDown("3")){
         
         }else if (Greenfoot.isKeyDown("4")){
