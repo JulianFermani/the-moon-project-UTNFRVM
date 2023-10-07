@@ -13,10 +13,21 @@ public class Operaciones extends Actor
     int imageWidth = 110; // Ancho en píxeles
     int imageHeight = 110   ; // altura en px
     int booleano, filaATrabajar, columnaATrabajar;
+    Integer filaSupuesta = null;
     Zero_One objeto;
     int bandera = 0;
     boolean esperando = false; // Bandera para controlar si se espera la tecla "D"
     int booleanoDelObjeto;
+    String ultimaTecla = "";
+    Map <String, Integer> mapaFilas = new HashMap<>(){
+        {
+            put("d", 1); //La fila D tiene asignada la fila 1;
+            put("c", 2); //La fila C tiene asignada la fila 2;
+            put("b", 3); //La fila B tiene asignada la fila 3;
+        }
+    };
+    
+    
     /**
      * Act - do whatever the Operaciones wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -37,30 +48,8 @@ public class Operaciones extends Actor
         if (Greenfoot.isKeyDown("1"))
         {
             columnaATrabajar = 7; // Se sabe que la columna a trabajar es igual a coordenadaX.
-            while (true) // While true para que el programa se quede esperando una tecla.
-            {
-              // En cada if se setea la fila a la que pertenece la letra.
-              if (Greenfoot.isKeyDown("D"))
-              {
-                esperando = true;
-                filaATrabajar =  1;
-                break;
-              }
-              else if (Greenfoot.isKeyDown("C"))
-              {
-                esperando = true;
-                filaATrabajar = 2;
-                break;
-            }
-              else if (Greenfoot.isKeyDown("B"))
-              {
-                esperando = true;
-                filaATrabajar = 3;
-                break;
-              }
-            }
-            // Solo entra si se toco alguna tecla de interes.
-            if (esperando)
+            filaATrabajar = elegirFila();
+            if (esperando) // Solo entra si se toco alguna tecla de interes.
             {
               bandera = 0;
               for (int i = 0; i <= 3; i++)
@@ -97,28 +86,7 @@ public class Operaciones extends Actor
         else if (Greenfoot.isKeyDown("2"))
         {
             columnaATrabajar = 7; // Se sabe que la columna a trabajar es igual a coordenadaX.
-            while (true) // While true para que el programa se quede esperando una tecla.
-            {
-            // En cada if se setea la fila a la que pertenece la letra.
-            if (Greenfoot.isKeyDown("D"))
-            {
-                esperando = true;
-                filaATrabajar =  1;
-                break;
-            }
-            else if (Greenfoot.isKeyDown("C"))
-            {
-                esperando = true;
-                filaATrabajar = 2;
-                break;
-            }
-            else if (Greenfoot.isKeyDown("B"))
-            {
-                esperando = true;
-                filaATrabajar = 3;
-                break;
-            }
-            }
+            filaATrabajar = elegirFila();
             // Solo entra si se toco alguna tecla de interes.
             if (esperando)
             {
@@ -231,5 +199,24 @@ public class Operaciones extends Actor
                     
                     return null; // Si no se encuentra ningún objeto en las coordenadas especificadas, devuelve null
                 }
-
+    public int elegirFila()
+    {
+        while (true)
+        {
+            ultimaTecla = Greenfoot.getKey(); // Esta funcion de greenfoot obtiene la ultima tecla apretada.
+            if (ultimaTecla != "1" || ultimaTecla != "2"|| ultimaTecla != "3"|| ultimaTecla != "4"|| ultimaTecla != "5"|| ultimaTecla != "6"|| ultimaTecla != "7"|| ultimaTecla != "8") // Si es distinto de alguna de las teclas del principio. 
+            {
+                filaSupuesta = mapaFilas.get(ultimaTecla);
+                if (filaSupuesta != null)
+                {
+                    filaATrabajar = filaSupuesta.intValue();
+                    esperando = true;
+                    break;
+                }
+            }
+        }
+    
+        return filaATrabajar;
+    }
+            
 }
