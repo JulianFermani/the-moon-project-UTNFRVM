@@ -19,9 +19,4 @@ public class Incrementar extends Operaciones
         GreenfootImage image = getImage();
         image.scale(imageWidth,imageHeight);
     }
-
-    public void act()
-    {
-        
-    }
 }
