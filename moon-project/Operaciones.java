@@ -133,15 +133,9 @@ public class Operaciones extends Actor
                 // Se obtienen los dos objetos de interes por fila y columna.
                 objeto1 = buscarObjetoEnCoordenadas(i, fila1);
                 objeto2 = buscarObjetoEnCoordenadas(i, fila2);
-                // Se obtienen valores de objeto1 y se almacenan en una variable auxiliar para usarla. 
-                booleanoObjeto1Aux = objeto1.booleano;
-                GreenfootImage imagenObjeto1Aux = objeto1.getImage();
-                
-                // Se intercambian los valores de los objetos entre si.
+                // Se le cambian los valores del objeto1 por los del objeto2. 
                 objeto1.booleano = objeto2.booleano;
                 objeto1.setImage(objeto2.getImage());
-                objeto2.booleano = booleanoObjeto1Aux;
-                objeto2.setImage(imagenObjeto1Aux);
         }
         }else if (Greenfoot.isKeyDown("6")){
             columnaATrabajar = 7; // Se sabe que la columna a trabajar es igual a coordenadaX.
