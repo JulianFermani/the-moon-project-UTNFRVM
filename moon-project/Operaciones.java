@@ -12,9 +12,9 @@ public class Operaciones extends Actor
     
     int imageWidth = 110; // Ancho en píxeles
     int imageHeight = 110   ; // altura en px
-    int booleano, filaATrabajar, columnaATrabajar;
+    int booleano, filaATrabajar, columnaATrabajar, fila1, fila2, booleanoObjeto1Aux;
     Integer filaSupuesta = null;
-    Zero_One objeto;
+    Zero_One objeto, objeto1, objeto2, aux;
     int bandera = 0;
     boolean esperando = false; // Bandera para controlar si se espera la tecla "D"
     int booleanoDelObjeto;
@@ -36,7 +36,7 @@ public class Operaciones extends Actor
     public Operaciones ()
     {
         GreenfootImage image = getImage();
-        image.setTransparency(100); // Establecer la transparencia al 0 para que no sea visible
+        image.setTransparency(0); // Establecer la transparencia al 0 para que no sea visible
         setImage(image);
     }
     public void act()
@@ -126,7 +126,17 @@ public class Operaciones extends Actor
         }else if (Greenfoot.isKeyDown("4")){
         
         }else if (Greenfoot.isKeyDown("5")){
-        
+            // Se le da al usuario la opcion de elegir las filas a mover.
+            fila1 = elegirFila();
+            fila2 = elegirFila();
+            for (int i=7; i > 3; i--){
+                // Se obtienen los dos objetos de interes por fila y columna.
+                objeto1 = buscarObjetoEnCoordenadas(i, fila1);
+                objeto2 = buscarObjetoEnCoordenadas(i, fila2);
+                // Se le cambian los valores del objeto1 por los del objeto2. 
+                objeto1.booleano = objeto2.booleano;
+                objeto1.setImage(objeto2.getImage());
+        }
         }else if (Greenfoot.isKeyDown("6")){
             columnaATrabajar = 7; // Se sabe que la columna a trabajar es igual a coordenadaX.
             while (true) // While true para que el programa se quede esperando una tecla.
@@ -160,14 +170,14 @@ public class Operaciones extends Actor
                   objeto = buscarObjetoEnCoordenadas(columnaATrabajar, filaATrabajar);
                   booleanoDelObjeto = objeto.booleano;
                   if (bandera == 0){
-                      if (booleanoDelObjeto==0){
+                      if (booleanoDelObjeto == 0){
                           // En caso de ser 0 quiere decir que esta apagado, entonces basicamente lo prendo cambiandole el valor booleano y seteandole la imagen
                         objeto.booleano = 1; // Cambio el valor booleano del objeto, como estaba apagado (0) lo cambio a prendido (1)
                         objeto.setImage("art_7.png");
                         GreenfootImage image = objeto.getImage();
                         image.scale(imageWidth, imageHeight); // seteo la dimension de la imagen
                         columnaATrabajar -= 1; // Resto una columna lo cual hace que pase al elemento de la izquierda y asi sucesivamente
-                      }else if (booleanoDelObjeto==1){
+                      }else if (booleanoDelObjeto == 1){
                           // En caso de ser 1 quiere decir que esta prendido, entonces basicamente lo prendo cambiandole el valor booleano y seteandole la imagen
                         objeto.booleano = 0;  // Cambio el valor booleano del objeto, como estaba prendido (1) lo cambio a apagado (0)
                         objeto.setImage("art_8.png");
@@ -215,7 +225,6 @@ public class Operaciones extends Actor
                 }
             }
         }
-    
         return filaATrabajar;
     }
             
