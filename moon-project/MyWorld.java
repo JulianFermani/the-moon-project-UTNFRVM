@@ -61,6 +61,9 @@ public class MyWorld extends World
         addObject(numero4, 7, 0);
         
         addObject(new Operaciones(), 0,0);
+        
+        addObject(new NumeroAFormar(), 3, 0);
+        addObject(new NumeroAFormar(), 3, 0 );
     }
         
         
