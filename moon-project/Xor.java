@@ -1,17 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class Xor here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class Xor extends Operaciones
 {
-    /**
-     * Act - do whatever the Xor wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    private int imageWidth = 120;
+    private int imageHeight = 120;
+    
     public Xor()
     {
         setImage("XOR.png");

@@ -1,13 +1,9 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class And here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class And extends Operaciones
 {
+    private int imageWidth = 120;
+    private int imageHeight = 120;
     public And()
     {
         setImage("AND.png");

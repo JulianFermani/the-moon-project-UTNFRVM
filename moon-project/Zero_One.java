@@ -1,19 +1,11 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class ZERO_ONE here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class Zero_One extends Bin
+public class Zero_One extends Actor
 {
-    /**
-     * Act - do whatever the ZERO_ONE wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
     int aleatorio;
     int booleano;
+    int imageWidth = 110; // Ancho en píxeles
+    int imageHeight = 110; // Altura en px
     public Zero_One ()
     {   
         aleatorio = Greenfoot.getRandomNumber(2);
