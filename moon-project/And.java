@@ -36,7 +36,7 @@ public class And extends Operaciones
                     GreenfootImage image = objeto1.getImage();
                     image.scale(imageWidth, imageHeight);
                 }
+            }
         }
-    }
     }
 }
