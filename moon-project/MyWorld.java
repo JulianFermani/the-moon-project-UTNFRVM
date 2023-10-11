@@ -48,17 +48,26 @@ public class MyWorld extends World
         addObject(new Zero_One(), 7, 3);
 
         //Se añaden las imagenes de los numeros
-        String[] rutasImagenes = {"ocho.png", "cuatro.png", "dos.png", "uno.png"};
+        String[] rutasImagenes = {"ocho.png","cuatro.png","dos.png","cuatro.png","D.png","C.png","B.png"};
 
-        Numeros numero1     = new Numeros(rutasImagenes[0]);
-        Numeros numero2 = new Numeros(rutasImagenes[1]);
-        Numeros numero3 = new Numeros(rutasImagenes[2]);
-        Numeros numero4 = new Numeros(rutasImagenes[3]);
+        NumerosYLetras numero1 = new NumerosYLetras(rutasImagenes[0]);
+        NumerosYLetras numero2 = new NumerosYLetras(rutasImagenes[1]);
+        NumerosYLetras numero3 = new NumerosYLetras(rutasImagenes[2]);
+        NumerosYLetras numero4 = new NumerosYLetras(rutasImagenes[3]);
+        NumerosYLetras letraD = new NumerosYLetras(rutasImagenes[4]);
+        NumerosYLetras letraC = new NumerosYLetras(rutasImagenes[5]);
+        NumerosYLetras letraB = new NumerosYLetras(rutasImagenes[6]);
+        
         // Se añaden los 8, 4, 2 y 1.
         addObject(numero1, 4, 0);
         addObject(numero2, 5, 0);
         addObject(numero3, 6, 0);
         addObject(numero4, 7, 0);
+        
+        // Se añade la D,B y C.
+        addObject(letraD, 3, 1);
+        addObject(letraC, 3, 2);
+        addObject(letraB, 3, 3);
         
         addObject(new Operaciones(), 0,0);
         

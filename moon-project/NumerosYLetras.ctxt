@@ -1,7 +1,7 @@
 #BlueJ class context
-comment0.target=Numeros
+comment0.target=NumerosYLetras
 comment1.params=rutaImagen
-comment1.target=Numeros(java.lang.String)
+comment1.target=NumerosYLetras(java.lang.String)
 comment2.params=
 comment2.target=void\ act()
 numComments=3
