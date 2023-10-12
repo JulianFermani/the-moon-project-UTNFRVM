@@ -73,6 +73,8 @@ public class MyWorld extends World
         
         addObject(new NumeroAFormar(), 3, 0);
         addObject(new NumeroAFormar(), 3, 0 );
+        
+        addObject(new HowToPlayButton(), 9,0);
     }
         
         
