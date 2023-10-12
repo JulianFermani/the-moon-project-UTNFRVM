@@ -1,8 +1,5 @@
 #BlueJ class context
 comment0.target=SegundoNumero
-comment0.text=public\ class\ SegundoNumero\ extends\ NumeroAFormar\r\n{\r\n\ \ \ \ private\ int\ segundoNumeroRandom;\r\n\ \ \ \ \r\n\ \ \ \ public\ SegundoNumero(){\r\n\ \ \ \ \ \ \ \ segundoNumeroRandom\ \=\ verificarNumero();\r\n\ \ \ \ }\r\n\ \ \ \ \r\n\ \ \ \ public\ int\ verificarNumero(){\ \ \ \ \r\n\ \ \ \ \ \ \ \ if\ (numeroRandom\ \=\=\ 4){\r\n\ \ \ \ \ \ \ \ \ \ \ \ segundoNumeroRandom\ \=\ Greenfoot.getRandomNumber(6);\r\n\ \ \ \ \ \ \ \ }\ else\ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ segundoNumeroRandom\ \=\ Greenfoot.getRandomNumber(10);\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ setImage(Numeros[segundoNumeroRandom]);\r\n\ \ \ \ \ \ \ \ GreenfootImage\ image\ \=\ getImage();\r\n\ \ \ \ \ \ \ \ setImage(image);\r\n\ \ \ \ \ \ \ \ image.scale(imageWidth,\ imageHeight);\r\n\ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ return\ (segundoNumeroRandom);\r\n\ \ \ \ }\r\n}
 comment1.params=
 comment1.target=SegundoNumero()
-comment2.params=
-comment2.target=int\ verificarNumero()
-numComments=3
+numComments=2

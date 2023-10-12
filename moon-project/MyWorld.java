@@ -71,15 +71,12 @@ public class MyWorld extends World
         
         addObject(new Operaciones(), 0,0);
         
-<<<<<<< HEAD
-        addObject(new NumeroAFormar(), 2, 4);
-        addObject(new SegundoNumero(), 3, 4 );
-=======
-        addObject(new NumeroAFormar(), 3, 0);
-        addObject(new NumeroAFormar(), 3, 0 );
+
+        addObject(new PrimerNumero(), 2, 4);
+        addObject(new SegundoNumero(), 3, 4);
+
         
         addObject(new HowToPlayButton(), 9,0);
->>>>>>> af9db462973db132515fb3745d5c156a8c48d864
     }
         
         
