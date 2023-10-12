@@ -1,5 +1,5 @@
 #BlueJ class context
 comment0.target=NumeroAFormar
-comment1.params=
-comment1.target=NumeroAFormar()
+comment1.params=numero
+comment1.target=NumeroAFormar(int)
 numComments=2

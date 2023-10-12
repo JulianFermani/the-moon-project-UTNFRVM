@@ -1,5 +1,5 @@
 #BlueJ class context
 comment0.target=SegundoNumero
-comment1.params=
-comment1.target=SegundoNumero()
+comment1.params=segundoNumero
+comment1.target=SegundoNumero(int)
 numComments=2

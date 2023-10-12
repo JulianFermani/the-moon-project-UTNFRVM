@@ -72,8 +72,10 @@ public class MyWorld extends World
         addObject(new Operaciones(), 0,0);
         
 
-        addObject(new PrimerNumero(), 2, 4);
-        addObject(new SegundoNumero(), 3, 4);
+        
+        int numeroRandom = Greenfoot.getRandomNumber(46); // Calcula un número aleatorio entre 0 y 44
+        addObject (new PrimerNumero(numeroRandom / 10), 2, 4);
+        addObject (new SegundoNumero(numeroRandom % 10), 3, 4);
 
         
         addObject(new HowToPlayButton(), 9,0);
