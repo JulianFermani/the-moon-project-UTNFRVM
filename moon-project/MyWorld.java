@@ -71,8 +71,8 @@ public class MyWorld extends World
         
         addObject(new Operaciones(), 0,0);
         
-        addObject(new NumeroAFormar(), 3, 0);
-        addObject(new NumeroAFormar(), 3, 0 );
+        addObject(new NumeroAFormar(), 2, 4);
+        addObject(new SegundoNumero(), 3, 4 );
     }
         
         
