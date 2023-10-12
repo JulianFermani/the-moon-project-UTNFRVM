@@ -48,7 +48,7 @@ public class MyWorld extends World
         addObject(new Zero_One(), 7, 3);
 
         //Se añaden las imagenes de los numeros
-        String[] rutasImagenes = {"ocho.png","cuatro.png","dos.png","cuatro.png","D.png","C.png","B.png"};
+        String[] rutasImagenes = {"ocho.png","cuatro.png","dos.png","uno.png","D.png","C.png","B.png"};
 
         NumerosYLetras numero1 = new NumerosYLetras(rutasImagenes[0]);
         NumerosYLetras numero2 = new NumerosYLetras(rutasImagenes[1]);
