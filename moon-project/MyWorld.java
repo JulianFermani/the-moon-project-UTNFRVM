@@ -48,7 +48,7 @@ public class MyWorld extends World
         addObject(new Zero_One(), 7, 3);
 
         //Se añaden las imagenes de los numeros
-        String[] rutasImagenes = {"ocho.png","cuatro.png","dos.png","cuatro.png","D.png","C.png","B.png"};
+        String[] rutasImagenes = {"ocho.png","cuatro.png","dos.png","uno.png","D.png","C.png","B.png"};
 
         NumerosYLetras numero1 = new NumerosYLetras(rutasImagenes[0]);
         NumerosYLetras numero2 = new NumerosYLetras(rutasImagenes[1]);
@@ -71,8 +71,15 @@ public class MyWorld extends World
         
         addObject(new Operaciones(), 0,0);
         
+<<<<<<< HEAD
         addObject(new NumeroAFormar(), 2, 4);
         addObject(new SegundoNumero(), 3, 4 );
+=======
+        addObject(new NumeroAFormar(), 3, 0);
+        addObject(new NumeroAFormar(), 3, 0 );
+        
+        addObject(new HowToPlayButton(), 9,0);
+>>>>>>> af9db462973db132515fb3745d5c156a8c48d864
     }
         
         
