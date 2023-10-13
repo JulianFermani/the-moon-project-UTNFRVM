@@ -70,7 +70,6 @@ public class MyWorld extends World
         addObject(letraB, 3, 3);
         
         addObject(new Operaciones(), 0,0);
-        
 
         
         int numeroRandom = Greenfoot.getRandomNumber(46); // Calcula un número aleatorio entre 0 y 44
@@ -79,6 +78,14 @@ public class MyWorld extends World
 
         
         addObject(new HowToPlayButton(), 9,0);
+        
+        // Esta parte añade el marco del codigo QR con su misma clase.
+        GreenfootImage marcoQR = new GreenfootImage("fondoQR.png");
+        marcoQR.scale(133, 133);
+        Actor imagenActor = new HowToPlayButton();
+        imagenActor.setImage(marcoQR);
+        addObject(imagenActor, 9, 0);
+
     }
         
         
