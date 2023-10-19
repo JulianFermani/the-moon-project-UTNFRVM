@@ -9,7 +9,7 @@ public class DespIzquierda extends Operaciones
     GreenfootImage imagenUltimo, imagen;
     public DespIzquierda()
     {
-        setImage("ROR.png");
+        setImage("ROL.png");
         GreenfootImage image = getImage();
         image.scale(imageWidth,imageHeight);
     }
