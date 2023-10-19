@@ -59,6 +59,17 @@ public class MyWorld extends World
         NumerosYLetras letraC = new NumerosYLetras(rutasImagenes[5]);
         NumerosYLetras letraB = new NumerosYLetras(rutasImagenes[6]);
         
+        //Se agregan las imagenes de la bateria
+        Bateria bateria1 = new Bateria(0);
+        addObject(bateria1,9,1);
+        Bateria bateria2 = new Bateria(0);
+        addObject(bateria2,9,2);
+        Bateria bateria3 = new Bateria(0);
+        addObject(bateria3,9,3);
+        
+        //Imagenes de las vidas
+        Vida vidas = new Vida(0);
+        addObject(vidas, 9,0);
         // Se añaden los 8, 4, 2 y 1.
         addObject(numero1, 4, 0);
         addObject(numero2, 5, 0);
@@ -78,7 +89,7 @@ public class MyWorld extends World
         addObject (new SegundoNumero(numeroRandom % 10), 3, 4);
 
         
-        addObject(new HowToPlayButton(), 9,0);
+        addObject(new HowToPlayButton(), 3,0);
         
         // Esta parte añade el marco del codigo QR con su misma clase.
         GreenfootImage marcoQR = new GreenfootImage("fondoQR.png");
