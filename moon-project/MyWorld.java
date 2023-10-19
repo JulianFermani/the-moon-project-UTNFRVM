@@ -96,7 +96,7 @@ public class MyWorld extends World
         marcoQR.scale(133, 133);
         Actor imagenActor = new HowToPlayButton();
         imagenActor.setImage(marcoQR);
-        addObject(imagenActor, 9, 0);
+        addObject(imagenActor, 3, 0);
 
     }
     public int getNumeroRandom(){
