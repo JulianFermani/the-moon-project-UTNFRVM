@@ -41,7 +41,9 @@ public class Plus_less extends Operaciones
             sumaResta();
             numeroRandom = ((MyWorld) mundo).getNumeroRandom();
             if (numeroRandom == resultado){
-                Greenfoot.playSound("victoria.mp3");
+                Greenfoot.playSound("victoria.wav");
+            }else if (numeroRandom != resultado){
+                Greenfoot.playSound("derrota.wav");
             }
         }
         }
