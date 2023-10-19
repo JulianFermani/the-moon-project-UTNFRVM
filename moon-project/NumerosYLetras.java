@@ -8,7 +8,7 @@ public class NumerosYLetras extends Actor
     int imageWidth = 120; // Ancho en píxeles
     int imageHeight = 120; // Altura en px
     //imageArray[] = new GreenfootImage[4];
-    private String[] rutasImagenes = {"number-0.png","number-1.png","number-0.png",}; 
+    private String[] rutasImagenes = {"number-0.png","number-1.png","num    ber-0.png",}; 
     public NumerosYLetras(String rutaImagen){
         GreenfootImage imagen = new GreenfootImage(rutaImagen);
         setImage(imagen);

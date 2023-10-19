@@ -41,21 +41,4 @@ public class DespDerecha extends Operaciones
             }           
         }    
     }
-    public List<Zero_One> obtenerVectorObjetos(int yObjetivo)
-    {
-        World mundo = getWorld(); // Obtén una referencia al mundo actual
-        List<Zero_One> objetosEnY = new ArrayList<Zero_One>();
-        
-        List<Zero_One> objetos = mundo.getObjects(Zero_One.class); // Obtiene todos los objetos de la clase Zero_One en el mundo
-        
-        for (Zero_One objeto : objetos)
-        {
-            if (objeto.getY() == yObjetivo)
-            {
-                objetosEnY.add(objeto); // Agrega el objeto encontrado en las coordenadas Y específicas al array
-            }
-        }
-        
-        return objetosEnY; // Devuelve el array de objetos encontrados en las coordenadas Y específicas
-    }
 }

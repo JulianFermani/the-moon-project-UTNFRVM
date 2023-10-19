@@ -11,7 +11,7 @@ public class Operaciones extends Actor
     int bandera = 0;
     boolean esperando = false; // Bandera para controlar si se espera la tecla "D"
     int booleanoDelObjeto;
-    String ultimaTecla = "";
+    String ultimaTecla = "", signoSupuesto = "", signoFinal = "";
     Map <String, Integer> mapaFilas = new HashMap<>(){
         {
             put("d", 1); //La fila D tiene asignada la fila 1;
@@ -19,7 +19,12 @@ public class Operaciones extends Actor
             put("b", 3); //La fila B tiene asignada la fila 3;
         }
     };
-    
+    Map <String, String> mapaSignos = new HashMap<>(){
+        {
+            put("+", "+");
+            put("-", "-");
+        }
+    };
     public Operaciones ()
     {
         GreenfootImage image = getImage();
@@ -61,5 +66,38 @@ public class Operaciones extends Actor
         }
         return filaATrabajar;
     }
-            
+    public String elegirSigno(){
+        while (true)
+        {
+            ultimaTecla = Greenfoot.getKey(); // Esta funcion de greenfoot obtiene la ultima tecla apretada.
+            if (ultimaTecla != "+" || ultimaTecla!= "-") // Si es distinto de alguna de las teclas del principio. 
+            {
+                signoSupuesto = mapaSignos.get(ultimaTecla);
+                if (signoSupuesto != null)
+                {
+                    signoFinal = signoSupuesto;
+                    esperando = true;
+                    break;
+                }
+            }
+        }
+        return signoFinal;
+    }
+    public List<Zero_One> obtenerVectorObjetos(int yObjetivo)
+    {
+        World mundo = getWorld(); // Obtén una referencia al mundo actual
+        List<Zero_One> objetosEnY = new ArrayList<Zero_One>();
+        
+        List<Zero_One> objetos = mundo.getObjects(Zero_One.class); // Obtiene todos los objetos de la clase Zero_One en el mundo
+        
+        for (Zero_One objeto : objetos)
+        {
+            if (objeto.getY() == yObjetivo)
+            {
+                objetosEnY.add(objeto); // Agrega el objeto encontrado en las coordenadas Y específicas al array
+            }
+        }
+        
+        return objetosEnY; // Devuelve el array de objetos encontrados en las coordenadas Y específicas
+    }
 }
