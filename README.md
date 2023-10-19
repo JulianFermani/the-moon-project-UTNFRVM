@@ -28,13 +28,13 @@ Se puede ver como trabajamos en:
 
 [![trello](https://img.shields.io/badge/Documentaci%C3%B3n-blue?style=for-the-badge&logo=googledocs&logoColor=white)](https://trello.com/b/dQaCFrNO/paradigmas-de-programaci%C3%B3n)
 
-# Binary Logic Puzzle 🎮
+# Suma-Mente Binaria 🎮
 
 ## Descripción
-"Binary Logic Puzzle" es un emocionante juego de lógica que desafía tu habilidad para manipular números binarios y operadores lógicos. Tu objetivo es utilizar tres líneas, cada una con cuatro espacios que representan los valores binarios "8421", para formar un número decimal específico mediante operaciones binarias correctas. Pon a prueba tu mente mientras resuelves una serie de desafíos de lógica en este juego divertido y educativo. 🧠🔢
+"Suma-Mente Binaria" es un emocionante juego de lógica que desafía tu habilidad para manipular números binarios y operadores lógicos. Tu objetivo es utilizar tres líneas, cada una con cuatro espacios que representan los valores binarios "8421", para formar un número decimal específico mediante operaciones binarias correctas. Pon a prueba tu mente mientras resuelves una serie de desafíos de lógica en este juego divertido y educativo. 🧠🔢
 
 ## Instrucciones
-1. **Objetivo del Juego:** 🎯 Tu objetivo en "Binary Logic Puzzle" es utilizar tres líneas, cada una con cuatro espacios que representan los valores binarios "8421", y operadores lógicos para formar un número decimal específico al dar como resultado una operación binaria correcta con las tres líneas. 🧮
+1. **Objetivo del Juego:** 🎯 Tu objetivo en "Suma-Mente Binaria" es utilizar tres líneas, cada una con cuatro espacios que representan los valores binarios "8421", y operadores lógicos para formar un número decimal específico al dar como resultado una operación binaria correcta con las tres líneas. 🧮
 
 2. **Las Tres Líneas:** 📝📝📝
    - En el juego, tendrás tres líneas, cada una con cuatro espacios que representan los valores binarios "8421". Estos espacios son esenciales para realizar operaciones binarias.
@@ -66,5 +66,5 @@ Se puede ver como trabajamos en:
 10. **Diviértete:** 🎉🕹️
     - ¡Disfruta de este desafiante juego de lógica y pon a prueba tus habilidades matemáticas y de pensamiento lógico!
 
-Recuerda que a medida que avanzas en el juego, los desafíos se vuelven más complejos, por lo que deberás pensar estratégicamente y utilizar la lógica binaria y los operadores lógicos de manera eficaz para resolverlos. ¡Buena suerte y diviértete jugando "Binary Logic Puzzle"! 🌟💫
+Recuerda que a medida que avanzas en el juego, los desafíos se vuelven más complejos, por lo que deberás pensar estratégicamente y utilizar la lógica binaria y los operadores lógicos de manera eficaz para resolverlos. ¡Buena suerte y diviértete jugando "Suma-Mente Binaria"! 🌟💫
 
