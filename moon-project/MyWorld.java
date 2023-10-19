@@ -12,6 +12,7 @@ public class MyWorld extends World
      * Constructor for objects of class MyWorld.
      * 
      */
+    public int numeroRandom;
     public MyWorld()
     {    
         super(9, 5, 140);
@@ -72,7 +73,7 @@ public class MyWorld extends World
         addObject(new Operaciones(), 0,0);
 
         
-        int numeroRandom = Greenfoot.getRandomNumber(46); // Calcula un número aleatorio entre 0 y 44
+        numeroRandom = Greenfoot.getRandomNumber(46); // Calcula un número aleatorio entre 0 y 44
         addObject (new PrimerNumero(numeroRandom / 10), 2, 4);
         addObject (new SegundoNumero(numeroRandom % 10), 3, 4);
 
@@ -87,6 +88,7 @@ public class MyWorld extends World
         addObject(imagenActor, 9, 0);
 
     }
-        
-        
+    public int getNumeroRandom(){
+        return numeroRandom;
+    }
 }

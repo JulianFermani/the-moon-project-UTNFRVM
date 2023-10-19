@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Plus_less extends Operaciones
 {
     String[] rutasImagenes = {"D.png", "C.png", "B.png", "mas.png", "menos.png"};
-    int multiplicador = 16, acum1 = 0, i, varBooleano, puntero = 4, punteroSigno = 5, x = 5, resultado = 0, intento = 0;
+    int multiplicador = 16, acum1 = 0, i, varBooleano, puntero = 4, punteroSigno = 5, x = 5, resultado = 0, intento = 0, numeroRandom;
     List<Zero_One> vectorObjetosFila = new ArrayList<Zero_One>();
     NumerosYLetras objeto, objetoSigno;
     
@@ -15,6 +15,7 @@ public class Plus_less extends Operaciones
         setImage("PLUS_LESS.png");
         GreenfootImage image = getImage();
         image.scale(imageWidth, imageHeight);
+        
     }
 
     public void act()
@@ -26,6 +27,7 @@ public class Plus_less extends Operaciones
     {
         if (Greenfoot.isKeyDown("s"))
         {
+            World mundo = getWorld();
             int fila1 = elegirFila();
             colocarRegistro(fila1);
             sumaResta();
@@ -37,6 +39,10 @@ public class Plus_less extends Operaciones
             fila1 = elegirFila();
             colocarRegistro(fila1);
             sumaResta();
+            numeroRandom = ((MyWorld) mundo).getNumeroRandom();
+            if (numeroRandom == resultado){
+                Greenfoot.playSound("victoria.mp3");
+            }
         }
         }
     public void colocarRegistro(int fila1){
